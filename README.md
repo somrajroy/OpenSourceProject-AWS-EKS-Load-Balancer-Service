@@ -20,7 +20,7 @@
   $ kubectl apply -f ./k8s-services/ <br/>
 * Check the pods. The worker pod will have a high restarts value because initially there were no connection between the pods (services were not created) <br/>
   ![image](https://user-images.githubusercontent.com/92582005/203015881-ee0fb50f-96e7-4d0e-974b-2d07ceee4ce7.png) <br/>
-* Check services. Wait for 5-10 mins for the load balancers to be created, initialized & working <br/>
+* Check services. Wait for 5-10 mins for the load balancers to be ready to serve traffic. <br/>
 * Get the DNS names of the load balancers. Under column "EXTERNAL-IP" <br/>
   ![image](https://user-images.githubusercontent.com/92582005/203016326-5be9c264-91c0-4485-ac7b-9d1a27e80eca.png) <br/>
 * Access the "vote" service and place your vote! <br/>
@@ -29,7 +29,7 @@
   ![image](https://user-images.githubusercontent.com/92582005/203017190-35953dae-9864-4e3e-888c-3fad0e9ff496.png) <br/>
 * Access the "result" service and check the results: <br/>
   http://<<-DNS Name from above->>:5001 <br/>
-* output of the "result" service would be like below. <br/>
+* Output of the "result" service would be like below. <br/>
   ![image](https://user-images.githubusercontent.com/92582005/203017536-458ad56b-19b9-49de-b5ca-2da8d6f87a6a.png) <br/>
 * Delete deployments and services. <br/>
   $ kubectl delete -f ./k8s-deployments/ <br/>
