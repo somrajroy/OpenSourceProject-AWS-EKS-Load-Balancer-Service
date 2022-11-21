@@ -35,7 +35,7 @@
   $ kubectl delete -f ./k8s-deployments/ <br/>
   $ kubectl apply -f ./k8s-services/ <br/>
   $ kubectl delete all --all <br/>
-* Verify from the EC2 console that the load balaner (classic) is delete. <br/>
+* Verify from the EC2 console that the load balaner (classic) is deleted. <br/>
 * Clean up AWS enviornment <br/>
   $ eksctl delete cluster --name k8sLB <br/>
   
