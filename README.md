@@ -41,6 +41,7 @@
 ![image](https://user-images.githubusercontent.com/92582005/203019675-03c94d76-f3c1-4622-bede-0ceaf44a74fe.png) <br/>
 #### References<br/>
 [How do I troubleshoot service load balancers for Amazon EKS?](https://aws.amazon.com/premiumsupport/knowledge-center/eks-load-balancers-troubleshooting/)<br/>
+[How do I resolve HTTP 503 (Service unavailable) errors when I access a Kubernetes Service in an Amazon EKS cluster?](https://aws.amazon.com/premiumsupport/knowledge-center/eks-resolve-http-503-errors-kubernetes/)<br/>
   
   
 
