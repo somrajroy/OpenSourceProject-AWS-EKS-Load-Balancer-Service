@@ -37,7 +37,8 @@
   $ kubectl delete all --all <br/>
 * Verify from the EC2 console that the load balaner (classic) is deleted. <br/>
 * Clean up AWS enviornment <br/>
-  $ eksctl delete cluster --name k8sLB <br/>
+  $ eksctl delete cluster --name k8sLB <br/><br/>
+![image](https://user-images.githubusercontent.com/92582005/203019675-03c94d76-f3c1-4622-bede-0ceaf44a74fe.png) <br/>
   
   
 
