@@ -21,7 +21,7 @@
 * Check the pods. The worker pod will have a high restarts value because initially there were no connection between the pods (services were not created) <br/>
   ![image](https://user-images.githubusercontent.com/92582005/203015881-ee0fb50f-96e7-4d0e-974b-2d07ceee4ce7.png) <br/>
 * Check services. Wait for 5-10 mins for the load balancers to be created, initialized & working <br/>
-* Get the DNS names of the load balancers <br/>
+* Get the DNS names of the load balancers. Under column "EXTERNAL-IP" <br/>
   ![image](https://user-images.githubusercontent.com/92582005/203016326-5be9c264-91c0-4485-ac7b-9d1a27e80eca.png) <br/>
 * Access the "vote" service and place your vote! <br/>
   http://<<-DNS Name from above->>:5000 <br/>
