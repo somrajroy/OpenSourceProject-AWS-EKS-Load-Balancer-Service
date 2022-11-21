@@ -33,7 +33,7 @@
   ![image](https://user-images.githubusercontent.com/92582005/203017536-458ad56b-19b9-49de-b5ca-2da8d6f87a6a.png) <br/>
 * Delete deployments and services. <br/>
   $ kubectl delete -f ./k8s-deployments/ <br/>
-  $ kubectl apply -f ./k8s-services/ <br/>
+  $ kubectl delete -f ./k8s-services/ <br/>
   $ kubectl delete all --all <br/>
 * Verify from the EC2 console that the load balaner (classic) is deleted. <br/>
 * Clean up AWS enviornment <br/>
