@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db
+  labels: 
+    app: db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: db
+  template:
+    metadata:
+      labels:
+        app: db
+    spec:
+      containers:
+      - image: selaworkshops/postgres:9.4
+        name: db
+        volumeMounts:
+        - mountPath: /var/lib/postgresql/data
+          name: db-data
+      volumes:
+      - name: db-data
+        emptyDir: {} 
